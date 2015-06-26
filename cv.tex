@@ -31,17 +31,17 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon}
 
-\newlength{\datebox}\settowidth{\datebox}{Spring 2011}
+\newlength{\datebox}\settowidth{\datebox}{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
 
-\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3
-\vspace{0.5em}}
+\newcommand{\NewEntry}[2]{\noindent\hangindent=2em\hangafter=0 #2\MarginText{\footnotesize #1}\vspace{0.5em}}
+\newcommand{\NewEntryFull}[3]{\noindent\hangindent=2em\hangafter=0 #2\MarginText{\footnotesize #1}{\ \ $\cdotp$\ \ \footnotesize \it #3}\vspace{0.5em}}
 \newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
-\thispagestyle{empty}
+%\thispagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -51,7 +51,7 @@
 
 \noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em}
 
-\NewEntry{}{\textit{Born in Belgium,}}{26 April 1987}
+\NewEntry{}{\textit{Born in Belgium, 26 April 1987}}{}
 
 \NewEntry{email}{\href{mailto:g.louppe@gmail.com}{g.louppe@gmail.com}}
 
@@ -63,9 +63,9 @@
 
 \vspace{1em}
 
-\noindent\spacedlowsmallcaps{Goal}\vspace{1em}
+\noindent\spacedlowsmallcaps{Summary}\vspace{1em}
 
-\Description{Gain fundamental experience in my area of interest and expertise.}\vspace{2em}
+\Description{Researcher in machine learning. My far ambition is to make a dent in science through data.}\vspace{2em}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -73,21 +73,18 @@
 
 \noindent\spacedlowsmallcaps{Work Experience}\vspace{1em}
 
-\NewEntry{2012--Present}{1\textsuperscript{st} Year Analyst, \textsc{Lehman Brothers}}
+\NewEntryFull{2014--Present}{Marie-Curie COFUND Research Fellow}{CERN (Switzerland)}
 
-\Description{\MarginText{Lehman Brothers}Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping. \\ Reference: John \textsc{McDonald}\ \ $\cdotp$\ \ +1 (000) 111 1111\ \ $\cdotp$\ \ \href{mailto:john@lehman.com}{john@lehman.com}}
+\Description{Machine learning and data analysis on HEP, text and bibliographic data.}
 
-%------------------------------------------------
+\NewEntryFull{2010--2014}{F.R.S.-FNRS Research Fellow}{University of Li{\`e}ge (Belgium)}
 
-\NewEntry{2010--2011}{Summer Intern, \textsc{Initech Inc}  --- Chicago}
+\Description{Fundamental and applied research in machine learning and data analysis. Expertise in tree-based methods.}
+\Description{Teaching assistant (Introduction to Algorithmics, Data Structures and Algorithms, Machine Learning)}
 
-\Description{\MarginText{Initech Inc}Rated "truly distinctive" for Analytical Skills and Teamwork. \\ Reference: Bill \textsc{Lumbergh}\ \ +1 (000) 111 1111\ \ $\cdotp$\ \ \href{mailto:bill@initech.com}{bill@initech.com}}
+\NewEntryFull{2011--Present}{Open source software developer}{Scikit-Learn}
 
-%------------------------------------------------
-
-\NewEntry{Jan-Mar 2011}{Computer Technician, \textsc{Buy More} --- Burbank}
-
-\Description{\MarginText{Buy More}Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again. \\ Reference: Big \textsc{Mike}\ \ +1 (000) 111 1111\ \ $\cdotp$\ \ \href{mailto:mike@buymore.com}{mike@buymore.com}}
+\Description{Benevolent core developer of Scikit-Learn, an open-source machine learning library written in Python.}
 
 %------------------------------------------------
 
@@ -99,19 +96,19 @@
 
 \spacedlowsmallcaps{Education}\vspace{1em}
 
-\NewEntry{2011-2012}{The University of California, Berkeley}
+\NewEntryFull{2010--2014}{PhD in Computer Sciences}{University of Li{\`e}ge (Belgium)}
 
-\Description{\MarginText{Masters of Commerce}GPA: 8.0\ \ $\cdotp$\ \ \textit{First Class Honours}\ \ $\cdotp$\ \ School: Business and Administration\newline
-Thesis: \textit{Money Is The Root Of All Evil -- Or Is It?}\newline
-Description: This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.\newline
-Advisors: Prof.~James \textsc{Smith} \& Assoc. Prof.~Jane \textsc{Smith}}
+\Description{Thesis: Understanding Random Forests -- From Theory to Practice.}
 
-%------------------------------------------------
+\NewEntryFull{2008--2010}{Master in Computer Sciences}{University of Li{\`e}ge (Belgium)}
 
-\NewEntry{2007-2010}{The University of California, Berkeley}
+\Description{Thesis: Collaborative Filtering -- Scalable approaches using Restricted Boltzmann Machines\newline
+Erasmus student at the Royal Institute of Technology (KTH), Sweden.}
+\Description{\textit{Summa cum laude.}}
 
-\Description{\MarginText{Bachelor of Business Studies}GPA: 7.5\ \ $\cdotp$\ \ \textit{Commerce Specialization}\ \ $\cdotp$\ \ School: Business and Administration\newline
-Description: This degree focussed heavily on important things such as personnel management and mundane paperwork.}
+\NewEntryFull{2005--2008}{Bachelor in Computer Sciences}{University of Li{\`e}ge (Belgium)}
+
+\Description{\textit{Summa cum laude.}}
 
 %------------------------------------------------
 
@@ -123,15 +120,10 @@ Description: This degree focussed heavily on important things such as personnel 
 
 \spacedlowsmallcaps{Publications}\vspace{1em}
 
-\NewEntry{January 2013}{Publication Title}
+\Description{\MarginText{\footnotesize 2014}\textit{Simple connectome inference from partial correlation statistics in calcium imaging.}
+Antonio Sutera, Arnaud Joly, Vincent François-Lavet, Zixiao Aaron Qiu, Gilles Louppe, Damien Ernst, Pierre Geurts
+[\href{http://hdl.handle.net/2268/169767}{PDF}, \href{https://github.com/glouppe/kaggle-connectomics}{Source}]}
 
-\Description{\MarginText{Full Journal Name}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl tellus, sodales non pulvinar in, adipiscing sit amet purus. Suspendisse sed facilisis diam. Sed ornare sem nec justo adipiscing nec venenatis lectus commodo. Mauris non neque ligula. Pellentesque sed quam eu felis iaculis iaculis ac a leo. Suspendisse neque neque, placerat id adipiscing et, elementum eu sem.\\ Authors: John \textsc{Smith}, ~James \textsc{Smith}}
-
-%------------------------------------------------
-
-\NewEntry{Sept. 2012}{Publication Title}
-
-\Description{\MarginText{Full Journal Name}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl tellus, sodales non pulvinar in, adipiscing sit amet purus. Suspendisse sed facilisis diam. Sed ornare sem nec justo adipiscing nec venenatis lectus commodo. Mauris non neque ligula. Pellentesque sed quam eu felis iaculis iaculis ac a leo. Suspendisse neque neque, placerat id adipiscing et, elementum eu sem.\\ Authors: John \textsc{Smith}, ~James \textsc{Smith}}
 
 %------------------------------------------------
 
@@ -144,15 +136,7 @@ Description: This degree focussed heavily on important things such as personnel 
 
 \spacedlowsmallcaps{Talks}\vspace{1em}
 
-\NewEntry{January 2013}{Publication Title}
-
-\Description{\MarginText{Full Journal Name}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl tellus, sodales non pulvinar in, adipiscing sit amet purus. Suspendisse sed facilisis diam. Sed ornare sem nec justo adipiscing nec venenatis lectus commodo. Mauris non neque ligula. Pellentesque sed quam eu felis iaculis iaculis ac a leo. Suspendisse neque neque, placerat id adipiscing et, elementum eu sem.\\ Authors: John \textsc{Smith}, ~James \textsc{Smith}}
-
-%------------------------------------------------
-
-\NewEntry{Sept. 2012}{Publication Title}
-
-\Description{\MarginText{Full Journal Name}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl tellus, sodales non pulvinar in, adipiscing sit amet purus. Suspendisse sed facilisis diam. Sed ornare sem nec justo adipiscing nec venenatis lectus commodo. Mauris non neque ligula. Pellentesque sed quam eu felis iaculis iaculis ac a leo. Suspendisse neque neque, placerat id adipiscing et, elementum eu sem.\\ Authors: John \textsc{Smith}, ~James \textsc{Smith}}
+\Description{}
 
 %------------------------------------------------
 
@@ -165,9 +149,9 @@ Description: This degree focussed heavily on important things such as personnel 
 
 \spacedlowsmallcaps{Skills}\vspace{1em}
 
-\Description{\MarginText{Specialties}Machine Learning, Statistics, Scientific Computing}
+\Description{\MarginText{\footnotesize Specialties}Machine Learning, Statistics, Scientific Computing}
 
-\Description{\MarginText{Programming}\textsc{Python}, \textsc{C}}
+\Description{\MarginText{\footnotesize Programming}\textsc{Python}, \textsc{C}}
 
 %------------------------------------------------
 
@@ -180,7 +164,7 @@ Description: This degree focussed heavily on important things such as personnel 
 
 \spacedlowsmallcaps{Other Information}\vspace{1em}
 
-\Description{\MarginText{Awards}2010 -- 2014\ \ $\cdotp$\ \ F.R.S.-FNRS research fellow scholarship}
+\Description{\MarginText{\footnotesize Awards}2010 -- 2014\ \ $\cdotp$\ \ F.R.S.-FNRS research fellow scholarship}
 
 \vspace{-0.5em}
 
@@ -197,7 +181,7 @@ Description: This degree focussed heavily on important things such as personnel 
 \newlength{\langbox}
 \settowidth{\langbox}{English}
 
-\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{French}}\ \ $\cdotp$\ \ \ Mothertongue}
+\Description{\MarginText{\footnotesize Languages}\parbox{\langbox}{\textsc{French}}\ \ $\cdotp$\ \ \ Mothertongue}
 
 \vspace{-0.5em}
 
@@ -211,7 +195,7 @@ Description: This degree focussed heavily on important things such as personnel 
 
 %------------------------------------------------
 
-\Description{\MarginText{Interests}Rowing\ \ $\cdotp$\ \ Cinema\ \ $\cdotp$\ \ Travel\ \ $\cdotp$\ \ Coffee\ \ $\cdotp$\ \ LPs}
+\Description{\MarginText{\footnotesize Interests}Rowing\ \ $\cdotp$\ \ Cinema\ \ $\cdotp$\ \ Travel\ \ $\cdotp$\ \ Coffee\ \ $\cdotp$\ \ Vinyls}
 
 %----------------------------------------------------------------------------------------
 
