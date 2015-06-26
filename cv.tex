@@ -31,11 +31,10 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon}
 
-\newlength{\datebox}\settowidth{\datebox}{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
-
-\newcommand{\NewEntry}[2]{\noindent\hangindent=2em\hangafter=0 #2\MarginText{\footnotesize #1}\vspace{0.5em}}
+\newcommand{\NewEntry}[2]{\noindent\hangindent=2em\hangafter=0 \MarginText{\footnotesize #1}#2\vspace{0.5em}}
 \newcommand{\NewEntryFull}[3]{\noindent\hangindent=2em\hangafter=0 #2\MarginText{\footnotesize #1}{\ \ $\cdotp$\ \ \footnotesize \it #3}\vspace{0.5em}}
-\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
+\newcommand{\Description}[1]{\hangindent=4em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
+\newcommand{\DescriptionAligned}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
 
 %----------------------------------------------------------------------------------------
 
@@ -65,7 +64,7 @@
 
 \noindent\spacedlowsmallcaps{Summary}\vspace{1em}
 
-\Description{Researcher in machine learning. My far ambition is to make a dent in science through data.}\vspace{2em}
+\NewEntry{}{{\footnotesize Researcher in machine learning. My far ambition is to make a dent in science through data.}}\vspace{2em}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -102,9 +101,9 @@
 
 \NewEntryFull{2008--2010}{Master in Computer Sciences}{University of Li{\`e}ge (Belgium)}
 
-\Description{Thesis: Collaborative Filtering -- Scalable approaches using Restricted Boltzmann Machines\newline
-Erasmus student at the Royal Institute of Technology (KTH), Sweden.}
-\Description{\textit{Summa cum laude.}}
+\Description{Thesis: Collaborative Filtering -- Scalable approaches using Restricted Boltzmann Machines.\newline
+Erasmus student at the Royal Institute of Technology (KTH), Sweden.\newline
+\textit{Summa cum laude.}}
 
 \NewEntryFull{2005--2008}{Bachelor in Computer Sciences}{University of Li{\`e}ge (Belgium)}
 
@@ -118,12 +117,78 @@ Erasmus student at the Royal Institute of Technology (KTH), Sweden.}
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
 
-\spacedlowsmallcaps{Publications}\vspace{1em}
+\spacedlowsmallcaps{Papers}\vspace{1em}
 
-\Description{\MarginText{\footnotesize 2014}\textit{Simple connectome inference from partial correlation statistics in calcium imaging.}
-Antonio Sutera, Arnaud Joly, Vincent François-Lavet, Zixiao Aaron Qiu, Gilles Louppe, Damien Ernst, Pierre Geurts
-[\href{http://hdl.handle.net/2268/169767}{PDF}, \href{https://github.com/glouppe/kaggle-connectomics}{Source}]}
+\NewEntry{2015}{Scikit-learn: Machine Learning Without Learning the Machinery.}
 
+\Description{Gael Varoquaux, Lars Buitinck, Gilles Louppe, Olivier Grisel, Fabian Pedregosa, Andreas Mueller.
+GetMobile: Mobile Computing and Communications 19 (1), 29-33.
+[\href{https://dl.acm.org/citation.cfm?id=2786995}{PDF}]}
+
+\NewEntry{}{Solar Energy Prediction: An International Contest to Initiate Interdisciplinary Research on Compelling Meteorological Problems.}
+
+\Description{Amy McGovern, David John Gagne II, Lucas Eustaquio, Gilberto Titericz Junior, Benjamin Lazorthes, Owen Zhang, Gilles Louppe, Peter Prettenhofer, Jeffrey Basara, Thomas Hamill, David Margolin.
+Bulletin of the American Meteorological Society, 2015.
+[\href{http://hdl.handle.net/2268/177115}{PDF}]}
+
+\NewEntry{2014}{Understanding Random Forests: From Theory to Practice.}
+
+\Description{Gilles Louppe.
+PhD thesis, University of Li{\`e}ge, 2010.
+[\href{http://hdl.handle.net/2268/170309}{PDF}, \href{https://github.com/glouppe/phd-thesis}{Code}]}
+
+\NewEntry{}{Simple connectome inference from partial correlation statistics in calcium imaging.}
+
+\Description{Antonio Sutera, Arnaud Joly, Vincent Francois-Lavet, Zixiao Aaron Qiu, Gilles Louppe, Damien Ernst, Pierre Geurts.
+[\href{http://hdl.handle.net/2268/169767}{PDF}, \href{https://github.com/glouppe/kaggle-connectomics}{Code}]}
+
+\NewEntry{}{Exploiting SNP Correlations within Random Forest for Genome-Wide Association Studies.}
+
+\Description{Vincent Botta, Gilles Louppe, Pierre Geurts, Louis Wehenkel.
+PLoS ONE 9(4), 2014.
+[\href{http://dx.plos.org/10.1371/journal.pone.0093379}{PDF}, \href{https://github.com/0asa/TTree-source}{Code}]}
+
+\NewEntry{}{A hybrid human-computer approach for large-scale image-based measurements using web services and machine learning.}
+
+\Description{Raphael Mar{\'e}e, Loic Rollus, Benjamin Stevens, Gilles Louppe, et al.
+11th IEEE International Symposium on Biomedical Imaging, Beijing, China, 2014.
+[\href{http://hdl.handle.net/2268/162084}{PDF}]}
+
+\NewEntry{2013}{Understanding variable importances in forests of randomized trees.}
+
+\Description{Gilles Louppe, Louis Wehenkel, Antonio Sutera, Pierre Geurts.
+NIPS, Lake Tahoe, United States, 2013.
+[\href{http://hdl.handle.net/2268/155642}{PDF}, \href{http://github.com/glouppe/paper-variable-importances}{Code}]}
+
+\NewEntry{}{API design for machine learning software: experiences from the scikit-learn project.}
+
+\Description{Lars Buitinck, Gilles Louppe, Mathieu Blondel, et al.
+ECML-PKDD 2013 Workshop: Languages for Data Mining and Machine Learning, Pragues, Czech Republic, 2013.
+[\href{http://hdl.handle.net/2268/154357}{PDF}, \href{http://github.com/scikit-learn/scikit-learn}{Code}]}
+
+\NewEntry{2012}{Ensembles on Random Patches.}
+
+\Description{Gilles Louppe, Pierre Geurts.
+ECML-PKDD 2012, Bristol, UK, 2012.
+[\href{http://hdl.handle.net/2268/130099}{PDF}, \href{http://github.com/scikit-learn/scikit-learn/blob/master/sklearn/ensemble/bagging.py}{Code}]}
+
+\NewEntry{2011}{Learning to rank with extremely randomized trees.}
+
+\Description{Pierre Geurts, Gilles Louppe.
+JMLR: Workshop and Conference Proceedings, 14, 49-61, 2011.
+[\href{http://hdl.handle.net/2268/84538}{PDF}]}
+
+\NewEntry{2010}{A zealous parallel gradient descent algorithm.}
+
+\Description{Gilles Louppe, Pierre Geurts.
+Learning on Cores, Clusters and Clouds workshop, NIPS, Vancouver, Canada, 2010
+[\href{http://hdl.handle.net/2268/80780}{PDF}, \href{http://hdl.handle.net/2268/80780}{Code}]}
+
+\NewEntry{}{Collaborative filtering: Scalable approaches using restricted Boltzmann machine.}
+
+\Description{Gilles Louppe.
+Master's thesis, University of Li{\`e}ge, 2010.
+[\href{http://hdl.handle.net/2268/74400}{PDF}, \href{http://hdl.handle.net/2268/74400}{Code}]}
 
 %------------------------------------------------
 
@@ -149,9 +214,9 @@ Antonio Sutera, Arnaud Joly, Vincent François-Lavet, Zixiao Aaron Qiu, Gilles L
 
 \spacedlowsmallcaps{Skills}\vspace{1em}
 
-\Description{\MarginText{\footnotesize Specialties}Machine Learning, Statistics, Scientific Computing}
+\DescriptionAligned{\MarginText{\footnotesize Specialties}Machine Learning, Statistics, Scientific Computing}
 
-\Description{\MarginText{\footnotesize Programming}\textsc{Python}, \textsc{C}}
+\DescriptionAligned{\MarginText{\footnotesize Programming}\textsc{Python}, \textsc{C}}
 
 %------------------------------------------------
 
@@ -164,15 +229,15 @@ Antonio Sutera, Arnaud Joly, Vincent François-Lavet, Zixiao Aaron Qiu, Gilles L
 
 \spacedlowsmallcaps{Other Information}\vspace{1em}
 
-\Description{\MarginText{\footnotesize Awards}2010 -- 2014\ \ $\cdotp$\ \ F.R.S.-FNRS research fellow scholarship}
+\DescriptionAligned{\MarginText{\footnotesize Awards}2010 -- 2014\ \ $\cdotp$\ \ F.R.S.-FNRS research fellow scholarship}
 
 \vspace{-0.5em}
 
-\Description{2010\ \ $\cdotp$\ \ Melchior Salier Award for best Master's Thesis in Computer Science}
+\DescriptionAligned{2010\ \ $\cdotp$\ \ Melchior Salier Award for best Master's Thesis in Computer Science}
 
 \vspace{-0.5em}
 
-\Description{2010\ \ $\cdotp$\ \ Baudouin Elleboudt Award for best Master's Thesis in Computer Science}
+\DescriptionAligned{2010\ \ $\cdotp$\ \ Baudouin Elleboudt Award for best Master's Thesis in Computer Science}
 
 %------------------------------------------------
 
@@ -181,21 +246,21 @@ Antonio Sutera, Arnaud Joly, Vincent François-Lavet, Zixiao Aaron Qiu, Gilles L
 \newlength{\langbox}
 \settowidth{\langbox}{English}
 
-\Description{\MarginText{\footnotesize Languages}\parbox{\langbox}{\textsc{French}}\ \ $\cdotp$\ \ \ Mothertongue}
+\DescriptionAligned{\MarginText{\footnotesize Languages}\parbox{\langbox}{\textsc{French}}\ \ $\cdotp$\ \ \ Mothertongue}
 
 \vspace{-0.5em}
 
-\Description{\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Fluent}
+\DescriptionAligned{\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Fluent}
 
 \vspace{-0.5em}
 
-\Description{\parbox{\langbox}{\textsc{Dutch}}\ \ $\cdotp$\ \ \ Basic}
+\DescriptionAligned{\parbox{\langbox}{\textsc{Dutch}}\ \ $\cdotp$\ \ \ Basic}
 
 \vspace{1em}
 
 %------------------------------------------------
 
-\Description{\MarginText{\footnotesize Interests}Rowing\ \ $\cdotp$\ \ Cinema\ \ $\cdotp$\ \ Travel\ \ $\cdotp$\ \ Coffee\ \ $\cdotp$\ \ Vinyls}
+\DescriptionAligned{\MarginText{\footnotesize Interests}Rowing\ \ $\cdotp$\ \ Cinema\ \ $\cdotp$\ \ Travel\ \ $\cdotp$\ \ Coffee\ \ $\cdotp$\ \ Vinyls}
 
 %----------------------------------------------------------------------------------------
 
