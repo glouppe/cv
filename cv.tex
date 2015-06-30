@@ -33,8 +33,10 @@
 
 \newcommand{\NewEntry}[2]{\noindent\hangindent=2em\hangafter=0 \MarginText{\footnotesize #1}#2\vspace{0.5em}}
 \newcommand{\NewEntryFull}[3]{\noindent\hangindent=2em\hangafter=0 #2\MarginText{\footnotesize #1}{\ \ $\cdotp$\ \ \footnotesize \it #3}\vspace{0.5em}}
+\newcommand{\NewPublication}[4]{\noindent\hangindent=2em\hangafter=0 \MarginText{\footnotesize\color{black} #1}{\footnotesize [{\color{Maroon}#2}]} #3 {\footnotesize\color{gray}#4}\vspace{0.5em}}
 \newcommand{\Description}[1]{\hangindent=4em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
 \newcommand{\DescriptionAligned}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
+
 
 %----------------------------------------------------------------------------------------
 
@@ -120,74 +122,62 @@ Erasmus student at the Royal Institute of Technology (KTH), Sweden.\newline
 
 \spacedlowsmallcaps{Papers}\vspace{1em}
 
-\NewEntry{2015}{Scikit-learn: Machine Learning Without Learning the Machinery.}
-
-\Description{Gael Varoquaux, Lars Buitinck, Gilles Louppe, Olivier Grisel, Fabian Pedregosa, Andreas Mueller.
-GetMobile: Mobile Computing and Communications 19 (1), 29-33.
+\NewPublication{2015}{12}{Scikit-learn: Machine Learning Without Learning the Machinery.}{%
+Gael Varoquaux, Lars Buitinck, Gilles Louppe, Olivier Grisel, Fabian Pedregosa, Andreas Mueller.
+GetMobile: Mobile Computing and Communications 19 (1), 29-33, 2015.
 [\href{https://dl.acm.org/citation.cfm?id=2786995}{PDF}]}
 
-\NewEntry{}{Solar Energy Prediction: An International Contest to Initiate Interdisciplinary Research on Compelling Meteorological Problems.}
-
-\Description{Amy McGovern, David John Gagne II, Lucas Eustaquio, Gilberto Titericz Junior, Benjamin Lazorthes, Owen Zhang, Gilles Louppe, Peter Prettenhofer, Jeffrey Basara, Thomas Hamill, David Margolin.
+\NewPublication{}{11}{Solar Energy Prediction: An International Contest to Initiate Interdisciplinary Research on Compelling Meteorological Problems.}{%
+Amy McGovern, David John Gagne II, Lucas Eustaquio, Gilberto Titericz Junior, Benjamin Lazorthes, Owen Zhang, Gilles Louppe, Peter Prettenhofer, Jeffrey Basara, Thomas Hamill, David Margolin.
 Bulletin of the American Meteorological Society, 2015.
 [\href{http://hdl.handle.net/2268/177115}{PDF}]}
 
-\NewEntry{2014}{Understanding Random Forests: From Theory to Practice.}
-
-\Description{Gilles Louppe.
+\NewPublication{2014}{10}{Understanding Random Forests: From Theory to Practice.}{%
+Gilles Louppe.
 PhD thesis, University of Li{\`e}ge, 2010.
 [\href{http://hdl.handle.net/2268/170309}{PDF}, \href{https://github.com/glouppe/phd-thesis}{Code}]}
 
-\NewEntry{}{Simple connectome inference from partial correlation statistics in calcium imaging.}
-
-\Description{Antonio Sutera, Arnaud Joly, Vincent Francois-Lavet, Zixiao Aaron Qiu, Gilles Louppe, Damien Ernst, Pierre Geurts.
+\NewPublication{}{9}{Simple connectome inference from partial correlation statistics in calcium imaging.}{%
+Antonio Sutera, Arnaud Joly, Vincent Francois-Lavet, Zixiao Aaron Qiu, Gilles Louppe, Damien Ernst, Pierre Geurts.
 [\href{http://hdl.handle.net/2268/169767}{PDF}, \href{https://github.com/glouppe/kaggle-connectomics}{Code}]}
 
-\NewEntry{}{Exploiting SNP Correlations within Random Forest for Genome-Wide Association Studies.}
-
-\Description{Vincent Botta, Gilles Louppe, Pierre Geurts, Louis Wehenkel.
+\NewPublication{}{8}{Exploiting SNP Correlations within Random Forest for Genome-Wide Association Studies.}{%
+Vincent Botta, Gilles Louppe, Pierre Geurts, Louis Wehenkel.
 PLoS ONE 9(4), 2014.
 [\href{http://dx.plos.org/10.1371/journal.pone.0093379}{PDF}, \href{https://github.com/0asa/TTree-source}{Code}]}
 
-\NewEntry{}{A hybrid human-computer approach for large-scale image-based measurements using web services and machine learning.}
-
-\Description{Raphael Mar{\'e}e, Loic Rollus, Benjamin Stevens, Gilles Louppe, et al.
+\NewPublication{}{7}{A hybrid human-computer approach for large-scale image-based measurements using web services and machine learning.}{%
+Raphael Mar{\'e}e, Loic Rollus, Benjamin Stevens, Gilles Louppe, et al.
 11th IEEE International Symposium on Biomedical Imaging, Beijing, China, 2014.
 [\href{http://hdl.handle.net/2268/162084}{PDF}]}
 
-\NewEntry{2013}{Understanding variable importances in forests of randomized trees.}
-
-\Description{Gilles Louppe, Louis Wehenkel, Antonio Sutera, Pierre Geurts.
+\NewPublication{2013}{6}{Understanding variable importances in forests of randomized trees.}{%
+Gilles Louppe, Louis Wehenkel, Antonio Sutera, Pierre Geurts.
 NIPS, Lake Tahoe, United States, 2013.
 [\href{http://hdl.handle.net/2268/155642}{PDF}, \href{http://github.com/glouppe/paper-variable-importances}{Code}]}
 
-\NewEntry{}{API design for machine learning software: experiences from the scikit-learn project.}
-
-\Description{Lars Buitinck, Gilles Louppe, Mathieu Blondel, et al.
+\NewPublication{}{5}{API design for machine learning software: experiences from the scikit-learn project.}{%
+Lars Buitinck, Gilles Louppe, Mathieu Blondel, et al.
 ECML-PKDD 2013 Workshop: Languages for Data Mining and Machine Learning, Pragues, Czech Republic, 2013.
 [\href{http://hdl.handle.net/2268/154357}{PDF}, \href{http://github.com/scikit-learn/scikit-learn}{Code}]}
 
-\NewEntry{2012}{Ensembles on Random Patches.}
-
-\Description{Gilles Louppe, Pierre Geurts.
+\NewPublication{2012}{4}{Ensembles on Random Patches.}{%
+Gilles Louppe, Pierre Geurts.
 ECML-PKDD 2012, Bristol, UK, 2012.
 [\href{http://hdl.handle.net/2268/130099}{PDF}, \href{http://github.com/scikit-learn/scikit-learn/blob/master/sklearn/ensemble/bagging.py}{Code}]}
 
-\NewEntry{2011}{Learning to rank with extremely randomized trees.}
-
-\Description{Pierre Geurts, Gilles Louppe.
+\NewPublication{2011}{3}{Learning to rank with extremely randomized trees.}{%
+Pierre Geurts, Gilles Louppe.
 JMLR: Workshop and Conference Proceedings, 14, 49-61, 2011.
 [\href{http://hdl.handle.net/2268/84538}{PDF}]}
 
-\NewEntry{2010}{A zealous parallel gradient descent algorithm.}
-
-\Description{Gilles Louppe, Pierre Geurts.
-Learning on Cores, Clusters and Clouds workshop, NIPS, Vancouver, Canada, 2010
+\NewPublication{2010}{2}{A zealous parallel gradient descent algorithm.}{%
+Gilles Louppe, Pierre Geurts.
+Learning on Cores, Clusters and Clouds workshop, NIPS, Vancouver, Canada, 2010.
 [\href{http://hdl.handle.net/2268/80780}{PDF}, \href{http://hdl.handle.net/2268/80780}{Code}]}
 
-\NewEntry{}{Collaborative filtering: Scalable approaches using restricted Boltzmann machines.}
-
-\Description{Gilles Louppe.
+\NewPublication{}{1}{Collaborative filtering: Scalable approaches using restricted Boltzmann machines.}{%
+Gilles Louppe.
 Master's thesis, University of Li{\`e}ge, 2010.
 [\href{http://hdl.handle.net/2268/74400}{PDF}, \href{http://hdl.handle.net/2268/74400}{Code}]}
 
@@ -200,7 +190,11 @@ Master's thesis, University of Li{\`e}ge, 2010.
 
 \spacedlowsmallcaps{Talks}\vspace{1em}
 
-\Description{}
+% scikit-learn tuto at lhcb
+% pydata paris
+% saclay talk high energy physics
+% euroscipy cambridge
+
 
 \vspace{1em}
 
