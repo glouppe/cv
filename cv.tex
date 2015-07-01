@@ -31,11 +31,11 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon}
 
-\newcommand{\NewEntry}[2]{\noindent\hangindent=2em\hangafter=0 \MarginText{\footnotesize #1}#2\vspace{0.5em}}
-\newcommand{\NewEntryFull}[3]{\noindent\hangindent=2em\hangafter=0 #2\MarginText{\footnotesize #1}{\ \ $\cdotp$\ \ \footnotesize \it #3}\vspace{0.5em}}
-\newcommand{\NewPublication}[4]{\noindent\hangindent=2em\hangafter=0 \MarginText{\footnotesize\color{black} #1}{\footnotesize [{\color{Maroon}#2}]} #3 {\footnotesize\color{gray}#4}\vspace{0.5em}}
+\newcommand{\NewEntry}[2]{\noindent\hangindent=2em\hangafter=0 \MarginText{#1}#2\vspace{0.5em}}
+\newcommand{\NewEntryFull}[3]{\noindent\hangindent=2em\hangafter=0 #2\MarginText{#1}{\ \ $\cdotp$\ \ \footnotesize \it #3}\vspace{0.5em}}
+\newcommand{\NewPublication}[4]{\noindent\hangindent=2em\hangafter=0 \MarginText{\color{black} #1}{\footnotesize [{\color{Maroon}#2}]} #3 {\footnotesize\color{gray}#4}\vspace{0.5em}}
 \newcommand{\Description}[1]{\hangindent=4em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
-\newcommand{\DescriptionAligned}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
+\newcommand{\DescriptionAligned}[1]{\hangindent=2em\hangafter=0\noindent\raggedright{#1}\par\normalsize\vspace{1em}}
 
 
 %----------------------------------------------------------------------------------------
@@ -68,7 +68,7 @@
 
 \noindent\spacedlowsmallcaps{Summary}\vspace{1em}
 
-\NewEntry{}{{\footnotesize Researcher in machine learning. Toolsmith for science. My far ambition is to make a dent in science through data.}}\vspace{2em}
+\NewEntry{}{Researcher in machine learning. Toolsmith for science. My far ambition is to make a dent in science through data.}\vspace{2em}
 
 
 %----------------------------------------------------------------------------------------
@@ -81,14 +81,16 @@
 
 \Description{Machine learning and data analysis on text and bibliographic data.}
 
-\NewEntryFull{2010--2014}{F.R.S.-FNRS Research Fellow}{University of Li{\`e}ge (Belgium)}
-
-\Description{Fundamental and applied research in machine learning and data analysis. Expertise in tree-based methods.}
-\Description{Teaching assistant (Introduction to Algorithmics, Data Structures and Algorithms, Machine Learning)}
-
 \NewEntryFull{2011--Present}{Open source software developer}{Scikit-Learn}
 
 \Description{Benevolent core developer of Scikit-Learn, an open-source machine learning library written in Python.}
+
+\NewEntryFull{2010--2014}{F.R.S.-FNRS Research Fellow}{University of Li{\`e}ge (Belgium)}
+
+\Description{Fundamental and applied research in machine learning and data analysis. Expertise in tree-based methods.}
+\Description{Teaching assistant (Introduction to Algorithmics, Data Structures and Algorithms, Machine Learning).}
+
+
 
 \vspace{1em}
 
@@ -275,9 +277,9 @@ December 11, 2010.
 
 \spacedlowsmallcaps{Skills}\vspace{1em}
 
-\DescriptionAligned{\MarginText{\footnotesize Specialties}Machine Learning, Statistics, Scientific Computing}
+\DescriptionAligned{\MarginText{Specialties}Machine Learning, Statistics, Scientific Computing}
 
-\DescriptionAligned{\MarginText{\footnotesize Programming}\textsc{Python}, \textsc{C}}
+\DescriptionAligned{\MarginText{Programming}\textsc{Python}, \textsc{C}}
 
 \vspace{1em}
 
@@ -288,15 +290,15 @@ December 11, 2010.
 
 \spacedlowsmallcaps{Other Information}\vspace{1em}
 
-\DescriptionAligned{\MarginText{\footnotesize Awards}2010 -- 2014\ \ $\cdotp$\ \ F.R.S.-FNRS research fellow scholarship}
+\DescriptionAligned{\MarginText{Awards}2010 -- 2014\ \ $\cdotp$\ \ F.R.S.-FNRS research fellow scholarship}
 
 \vspace{-0.5em}
 
-\DescriptionAligned{2010\ \ $\cdotp$\ \ Melchior Salier Award for best Master's Thesis in Computer Science}
+\DescriptionAligned{2010\ \ $\cdotp$\ \ Melchior Salier Award for best Master's Thesis}
 
 \vspace{-0.5em}
 
-\DescriptionAligned{2010\ \ $\cdotp$\ \ Baudouin Elleboudt Award for best Master's Thesis in Computer Science}
+\DescriptionAligned{2010\ \ $\cdotp$\ \ Baudouin Elleboudt Award for best Master's Thesis}
 
 %------------------------------------------------
 
@@ -305,7 +307,7 @@ December 11, 2010.
 \newlength{\langbox}
 \settowidth{\langbox}{English}
 
-\DescriptionAligned{\MarginText{\footnotesize Languages}\parbox{\langbox}{\textsc{French}}\ \ $\cdotp$\ \ \ Mothertongue}
+\DescriptionAligned{\MarginText{Languages}\parbox{\langbox}{\textsc{French}}\ \ $\cdotp$\ \ \ Mothertongue}
 
 \vspace{-0.5em}
 
@@ -319,7 +321,7 @@ December 11, 2010.
 
 %------------------------------------------------
 
-\DescriptionAligned{\MarginText{\footnotesize Interests}Rowing\ \ $\cdotp$\ \ Cinema\ \ $\cdotp$\ \ Travel\ \ $\cdotp$\ \ Coffee\ \ $\cdotp$\ \ Vinyls}
+\DescriptionAligned{\MarginText{Interests}Rowing\ \ $\cdotp$\ \ Cinema\ \ $\cdotp$\ \ Travel\ \ $\cdotp$\ \ Coffee\ \ $\cdotp$\ \ Vinyls}
 
 
 \end{cv}
