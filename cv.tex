@@ -20,11 +20,15 @@
 
 \documentclass{scrartcl}
 
+
+
 \reversemarginpar
 \newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}}
 
 \usepackage[nochapters]{classicthesis}
 \usepackage[LabelsAligned]{currvita}
+
+\usepackage[a4paper, lmargin=2in, tmargin=1in, bmargin=1.5in, footskip=0.5in]{geometry}
 
 \renewcommand{\cvheadingfont}{\LARGE\color{Maroon}}
 
@@ -54,7 +58,7 @@
 
 \NewEntry{}{Born in Belgium, 26 April 1987}{}
 
-\NewEntry{email}{\href{mailto:g.louppe@gmail.com}{g.louppe@gmail.com}}
+\NewEntry{email}{\href{mailto:g.louppe@nyu.edu}{g.louppe@nyu.edu}}
 
 \NewEntry{scholar}{\href{https://scholar.google.be/citations?user=F_77d4QAAAAJ}{F\_77d4QAAAA}}
 
@@ -78,9 +82,9 @@ My far ambition is to make a dent in science through data.}\vspace{2em}
 
 \noindent\spacedlowsmallcaps{Work Experience}\vspace{1em}
 
-\NewEntryFull{2015--Present}{Postdoctoral Associate}{NYU (USA), CERN (Switzerland)}
+\NewEntryFull{2015--Present}{Postdoctoral Associate}{New York University (USA), CERN (Switzerland)}
 
-\Description{Machine learning research for High Energy Physics. Scientific software engineering.}
+\Description{Machine learning research for high energy physics. }
 
 \NewEntryFull{2011--Present}{Open source software developer}{Scikit-Learn}
 
@@ -238,6 +242,66 @@ Master's thesis, University of Li{\`e}ge, 2010.
 
 \spacedlowsmallcaps{Talks}\vspace{1em}
 
+\NewPublication{2016}{27}{Learning to Pivot with Adversarial Networks.}{%
+ATLAS ML Forum, CERN, Switzerland
+November 17, 2016.
+[\href{https://github.com/glouppe/talk-learning-to-pivot}{Materials}]}
+
+\NewPublication{}{26}{Series of Lectures on Machine Learning.}{%
+Machine Learning and Data Science in Physics, Barcelona
+October 17-21, 2016.
+[\href{https://github.com/iccub-ml/lectures-glouppe}{Materials}]}
+
+\NewPublication{}{25}{Learning to generate with adversarial networks.}{%
+US ATLAS Physics Support, Software and Computing meeting, Chicago, USA
+August 3, 2016.
+[\href{https://indico.cern.ch/event/526308/}{Materials}]}
+
+\NewPublication{}{25}{Learning to generate with adversarial networks.}{%
+ATLAS ML Forum, CERN, Switzerland
+July 21, 2016.
+[\href{https://indico.cern.ch/event/556591/}{Materials}]}
+
+\NewPublication{}{25}{Learning to generate with adversarial networks.}{%
+DS @ HEP at the Simons Foundation, New York, USA
+July 5-7, 2016.
+[\href{https://indico.hep.caltech.edu/indico/conferenceTimeTable.py?confId=102}{Materials}]}
+
+\NewPublication{}{25}{Learning to generate with adversarial networks.}{%
+Software Tech Forum, CERN, Switzerland
+June 27, 2016.
+[\href{https://indico.cern.ch/event/544644/contributions/2210328/attachments/1299201/1938586/slides.pdf}{Materials}]}
+
+\NewPublication{}{24}{Approximating likelihood ratios with Calibrated Classifiers.}{%
+Invited lecture at the 2nd MLHEP summer school, Lund, Sweden
+June 22, 2016.
+[\href{https://github.com/glouppe/talk-approximating-likelihood-ratios-with-classifiers}{Materials}]}
+
+\NewPublication{}{23}{Robust and Calibrated Classifiers with Scikit-Learn.}{%
+Zurich ML meetup, Switzerland
+April 13, 2016.
+[\href{https://github.com/glouppe/tutorials-scikit-learn}{Materials}]}
+
+\NewPublication{}{22}{Approximating likelihood ratios with Calibrated Classifiers.}{%
+ETH, Zurich, Switzerland
+April 13, 2016.
+[\href{https://github.com/glouppe/talk-approximating-likelihood-ratios-with-classifiers}{Materials}]}
+
+\NewPublication{}{21}{Approximating likelihood ratios with Calibrated Classifiers.}{%
+ATLAS ML workshop, CERN, Switzerland
+March 29-31, 2016.
+[\href{https://github.com/glouppe/talk-approximating-likelihood-ratios-with-classifiers}{Materials}]}
+
+\NewPublication{}{21}{An introduction to Bayesian Optimization.}{%
+ATLAS ML workshop, CERN, Switzerland
+March 29-31, 2016.
+[\href{https://github.com/glouppe/talk-bayesian-optimisation}{Materials}]}
+
+\NewPublication{}{21}{An introduction to machine learning with Scikit-Learn.}{%
+Heavy Flavour Data Mining workshop, Zurich, Switzerland
+February 18, 2016.
+[\href{https://github.com/glouppe/tutorial-scikit-learn}{Materials}]}
+
 \NewPublication{2015}{20}{Pitfalls of evaluating a classifier’s performance in high energy physics applications.}{%
 ALEPH workshop, NIPS, Montréal, Canada.
 December 11, 2015.
@@ -342,34 +406,56 @@ Whistler, Canada.
 December 11, 2010.
 [\href{http://hdl.handle.net/2268/80780}{Materials}]}
 
-% scikit-learn tuto at lhcb
-% pydata paris
-% saclay talk high energy physics
-% paris ml meetup
-% euroscipy cambridge
-
-
 \vspace{1em}
 
 
 %----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS
+%   Supervision
 %----------------------------------------------------------------------------------------
 
-\spacedlowsmallcaps{Skills}\vspace{1em}
+\noindent\spacedlowsmallcaps{Academic Supervision}\vspace{1em}
 
-\DescriptionAligned{\MarginText{Specialties}Machine Learning, Statistics, Scientific Computing}
+\NewEntryFull{2016--Present}{Manoj Kumar}{New York University (USA)}
 
-\DescriptionAligned{\MarginText{Programming}\textsc{Python}, \textsc{C}}
+\Description{Junior data scientist at the Center for Data Science.
+Sequential model-based optimization.}
+
+\NewEntryFull{2014--2015}{Mateusz Susik}{University of Warsaw (Poland)}
+
+\Description{CERN intern.
+Author disambiguation with supervised learning.}
+
+\NewEntryFull{2014--2015}{Hussein Al-Natsheh}{University of Lyon 2 (France)}
+
+\Description{CERN intern.
+Author disambiguation with supervised learning.}
+
+\NewEntryFull{2014--2015}{Joseph Boyd}{EPFL (Switzerland)}
+
+\Description{CERN intern.
+Text mining with Machine Learning.}
 
 \vspace{1em}
+
+
+% %----------------------------------------------------------------------------------------
+% %	COMPUTER SKILLS
+% %----------------------------------------------------------------------------------------
+%
+% \spacedlowsmallcaps{Skills}\vspace{1em}
+%
+% \DescriptionAligned{\MarginText{Specialties}Machine Learning, Statistics, Scientific Computing}
+%
+% \DescriptionAligned{\MarginText{Programming}\textsc{Python}, \textsc{C}}
+%
+% \vspace{1em}
 
 
 %----------------------------------------------------------------------------------------
 %	OTHER INFORMATION
 %----------------------------------------------------------------------------------------
 
-\spacedlowsmallcaps{Other Information}\vspace{1em}
+\spacedlowsmallcaps{Miscellaneous}\vspace{1em}
 
 \DescriptionAligned{\MarginText{Awards}2016\ \ $\cdotp$\ \ Best paper award for {\it Ethnicity sensitive author disambiguation using
 semi-supervised learning} at KESW'2016}
@@ -409,10 +495,10 @@ semi-supervised learning} at KESW'2016}
 
 \vspace{1em}
 
-%------------------------------------------------
-
-\DescriptionAligned{\MarginText{Interests}Rowing\ \ $\cdotp$\ \ Cinema\ \ $\cdotp$\ \ Travel\ \ $\cdotp$\ \ Coffee\ \ $\cdotp$\ \ Vinyls}
-
+% %------------------------------------------------
+%
+% \DescriptionAligned{\MarginText{Interests}Rowing\ \ $\cdotp$\ \ Cinema\ \ $\cdotp$\ \ Travel\ \ $\cdotp$\ \ Coffee\ \ $\cdotp$\ \ Vinyls}
+%
 
 \end{cv}
 \end{document}
