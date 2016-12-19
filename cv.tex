@@ -35,11 +35,11 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon}
 
-\newcommand{\NewEntry}[2]{\noindent\hangindent=2em\hangafter=0 \MarginText{#1}#2\vspace{0.5em}}
-\newcommand{\NewEntryFull}[3]{\noindent\hangindent=2em\hangafter=0 #2\MarginText{#1}{\ \ $\cdotp$\ \ \it #3}\vspace{0.5em}}
-\newcommand{\NewPublication}[4]{\noindent\hangindent=2em\hangafter=0 \MarginText{\color{black} #1}{\footnotesize [{\color{Maroon}#2}]} #3 {\footnotesize\color{gray}#4}\vspace{0.5em}}
-\newcommand{\Description}[1]{\hangindent=4em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
-\newcommand{\DescriptionAligned}[1]{\hangindent=2em\hangafter=0\noindent\raggedright{#1}\par\normalsize\vspace{1em}}
+\newcommand{\NewEntry}[2]{\noindent\hangindent=0em\hangafter=0 \MarginText{#1}#2\vspace{0.5em}}
+\newcommand{\NewEntryFull}[3]{\noindent\hangindent=0em\hangafter=0 #2\MarginText{#1}{\ \ $\cdotp$\ \ \it #3}\vspace{0.5em}}
+\newcommand{\NewPublication}[4]{\noindent\hangindent=0em\hangafter=0 \MarginText{\color{black} #1}{\footnotesize [{\color{Maroon}#2}]} #3 {\footnotesize\color{gray}#4}\vspace{0.5em}}
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
+\newcommand{\DescriptionAligned}[1]{\hangindent=0em\hangafter=0\noindent\raggedright{#1}\par\normalsize\vspace{1em}}
 
 
 %----------------------------------------------------------------------------------------
@@ -53,6 +53,8 @@
 %----------------------------------------------------------------------------------------
 
 \begin{cv}{\spacedallcaps{Gilles Louppe}}\vspace{1.5em}
+
+\noindent{\it Academic resume}\vspace{2em}
 
 \noindent\spacedlowsmallcaps{Personal Information}\vspace{1em}
 
@@ -438,7 +440,7 @@ Author disambiguation with supervised learning.}
 Text mining with Machine Learning.}
 
 \vspace{1em}
-\newpage
+%\newpage
 
 
 %----------------------------------------------------------------------------------------
