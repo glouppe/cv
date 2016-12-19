@@ -28,7 +28,7 @@
 \usepackage[nochapters]{classicthesis}
 \usepackage[LabelsAligned]{currvita}
 
-\usepackage[a4paper, lmargin=2in, tmargin=1in, bmargin=1.5in, footskip=0.5in]{geometry}
+\usepackage[a4paper, lmargin=2in, rmargin=1.5in, tmargin=1in, bmargin=1.5in, footskip=0.5in]{geometry}
 
 \renewcommand{\cvheadingfont}{\LARGE\color{Maroon}}
 
@@ -44,6 +44,7 @@
 
 %----------------------------------------------------------------------------------------
 
+\date{}
 \begin{document}
 
 %\thispagestyle{empty}
@@ -52,9 +53,7 @@
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{cv}{\spacedallcaps{Gilles Louppe}}\vspace{1.5em}
-
-\noindent{\it Academic resume}\vspace{2em}
+\begin{cv}{\spacedallcaps{Gilles Louppe}}\vspace{3em}
 
 \noindent\spacedlowsmallcaps{Personal Information}\vspace{1em}
 
@@ -75,7 +74,8 @@
 \noindent\spacedlowsmallcaps{Research interests and objectives}\vspace{1em}
 
 \NewEntry{}{%
-As a researcher, my far ambition is to make artificial intelligence a cornerstone of the modern scientific method.
+As a researcher, my far ambition is to make artificial intelligence a cornerstone of the modern scientific method
+and thereby unlock new discoveries.
 Using particle physics as a testbed, my present research interests
 circle around how to use or design new machine learning algorithms to
 approach data-driven scientific problems in new and revolutionizing
@@ -136,6 +136,10 @@ Erasmus student at the Royal Institute of Technology (KTH), Sweden.\newline
 %----------------------------------------------------------------------------------------
 
 \spacedlowsmallcaps{Papers}\vspace{1em}
+
+\NewPublication{2017}{23}{QCD-aware Recursive Neural Networks for Jet Physics.}{%
+Gilles Louppe, Kyunghyun Cho, Kyle Cranmer.
+{\it In preparation.}}
 
 \NewPublication{2016}{22}{Learning to Pivot with Adversarial Networks.}{%
 Gilles Louppe, Michael Kagan, Kyle Cranmer.
@@ -446,6 +450,7 @@ Text mining with Machine Learning.}
 %----------------------------------------------------------------------------------------
 %   Software
 %----------------------------------------------------------------------------------------
+\newpage
 
 \noindent\spacedlowsmallcaps{Open Source Software}\vspace{1em}
 
